@@ -23,8 +23,8 @@ body {
   padding: 2rem;
 
   font-family: "Oxygen", sans-serif;
-  color: white;
-  background: var(--bgColor);
+  color: var(--color);
+  background: white;
 }
 
 h1 {
