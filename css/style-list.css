@@ -23,7 +23,7 @@ body {
   padding: 2rem;
 
   font-family: "Oxygen", sans-serif;
-  color: var(--color);
+  color: white;
   background: var(--bgColor);
 }
 
