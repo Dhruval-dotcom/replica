@@ -24,7 +24,7 @@ body {
 
   font-family: "Oxygen", sans-serif;
   color: var(--color);
-  background: white;
+  background: var(--bgColor);
 }
 
 h1 {
