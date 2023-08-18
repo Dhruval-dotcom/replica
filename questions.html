@@ -1,72 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style-question.css">
+    <link rel="stylesheet" href="css/style-question.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
-    <ol style="--length: 5" role="list">
-        <li style="--i: 1">
-            <h6>How is an array initialized in C language?</h6>
-            <span>A </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> int a[3] = {1,2,3}</label><br>
-            <span>B </span><input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> int a = {1,2,3}</label><br>
-            <span>C </span> <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> int a = new int(3)</label><br>
-        </li>
-        <li style="--i: 2">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <ol class="question-group" style="--length: 5" role="list">
+        <li class="question" style="--i: 1">
+            <div class="badges badge-1">Question 1</div>
+           <hr>
+           <h6>How is an array initialized in C language?How is an array initialized in C language?How is an array initialized in C language?How is an array initialized in C language?How is an array initialized in C language?How is an array initialized in C language??</h6>
+           <div class="option-list-1">
+                <span class="option-1">int a = new int(3)</span>
+                <span class="option-1">int a = new int(3)</span>
+                <span class="option-1">int a = new int(3)</span>
+                <span class="option-1">int a = new int(3)</span>
+           </div>
+       </li>
+
+        <li class="question" style="--i: 2">
+            <div class="badges badge-2">Question 2</div>
+           <hr>
+           <h6>How is the 2nd element in an array accessed based on pointer notation?</h6>
+           <div class="option-list-2">
+               <span class="option-2">int a = new int(3)</span>
+               <span class="option-2">int a = new int(3)</span>
+               <span class="option-2">int a = new int(3)</span>
+               <span class="option-2">int a = new int(3)</span>
+           </div>
+       </li>
+        <li class="question" style="--i: 3">
+            <div class="badges badge-3">Question 3</div>
+           <hr>
+           <h6>How is the 2nd element in an array accessed based on pointer notation?</h6>
+           <div class="option-list-3">
+               <span class="option-3">int a = new int(3)</span>
+               <span class="option-3">int a = new int(3)</span>
+               <span class="option-3">int a = new int(3)</span>
+               <span class="option-3">int a = new int(3)</span>
+           </div>
+       </li>
+       <li class="question" style="--i: 4">
+            <div class="badges badge-4">Question 4</div>
+            <hr>
             <h6>How is the 2nd element in an array accessed based on pointer notation?</h6>
-            <span>A </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> *a + 2 </label><br>
-            <span>B </span><input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> *(a + 2)</label><br>
-            <span>C </span> <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> &(a + 2)</label><br>
+            <div class="option-list-4">
+                <span class="option-4">int a = new int(3)</span>
+                <span class="option-4">int a = new int(3)</span>
+                <span class="option-4">int a = new int(3)</span>
+                <span class="option-4">int a = new int(3)</span>
+            </div>
         </li>
-        <li style="--i: 3">
-            <h6>Which of the following is a linear data structure?</h6>
-            <span>A </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> Array</label><br>
-            <span>B </span><input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> AVL Trees</label><br>
-            <span>C </span> <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Binary Trees</label><br>
+        <li class="question" style="--i: 5">
+            <div class="badges badge-5">Question 5</div>
+            <hr>
+            <h6>How is the 2nd element in an array accessed based on pointer notation?</h6>
+            <div class="option-list-5">
+                <span class="option-5">int a = new int(3)</span>
+                <span class="option-5">int a = new int(3)</span>
+                <span class="option-5">int a = new int(3)</span>
+                <span class="option-5">int a = new int(3)</span>
+            </div>
         </li>
-        <li style="--i: 4">
-            <h6>Which of the following is not the type of queue?</h6>
-            <span>A </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> Prority Queue</label><br>
-            <span>B </span><input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> Ordinary Queue</label><br>
-            <span>C </span> <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Ciruclar Queue</label><br>
+        <li class="question" style="--i: 6">
+            <div class="badges badge-6">Question 6</div>
+            <hr>
+            <h6>How is the 2nd element in an array accessed based on pointer notation?</h6>
+            <div class="option-list-6">
+                <span class="option-6">int a = new int(3)</span>
+                <span class="option-6">int a = new int(3)</span>
+                <span class="option-6">int a = new int(3)</span>
+                <span class="option-6">int a = new int(3)</span>
+            </div>
         </li>
-        <li style="--i: 5">
+        <li class="question" style="--i: 7">
+            <div class="badges badge-7">Question 2</div>
+            <hr>
+            <h6>How is the 2nd element in an array accessed based on pointer notation?</h6>
+            <div class="option-list-7">
+                <span class="option-7">int a = new int(3)</span>
+                <span class="option-7">int a = new int(3)</span>
+                <span class="option-7">int a = new int(3)</span>
+                <span class="option-7">int a = new int(3)</span>
+            </div>
+        </li>
+        <li class="question" style="--i: 8">
             <h6>What is the output of the following code snippet?</h6>
-            <div class="code">
+            <div class="alert alert-primary" role="alert">
                 <pre>
                     void solve() {
-                        stack<int> s;
+                        stack&lt;int&gt; s;
                         s.push(1);
                         s.push(2);
                         s.push(3);
-                        for(int i = 1; i <= 3; i++) {
-                            cout << s.top() << “ “;
+                        for(int i = 1; i &lt;= 3; i++) {
+                            cout &lt;&lt; s.top() &lt;&lt; “ “;
                             s.pop();
                         }
                      }
                 </pre>
-            </div><br>
-            <span>A </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> 3 2 1</label><br>
-            <span>B </span><input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> 1 2 3</label><br>
-            <span>C </span> <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> 1</label><br>
+            </div>
+            <span>A </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1"> 3 2 1</label><br />
+            <span>B </span><input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+            <label for="vehicle2"> 1 2 3</label><br />
+            <span>C </span>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+            <label for="vehicle3"> 1</label><br />
         </li>
     </ol>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
