@@ -63,7 +63,7 @@ console.log('clicked', answer_quiz1["2"]["answer"][0])
 
   for(let i=1;i<=7;i++){
     let solution_msg = `<br>
-    <button data-id="${i}" id="btn-${i}" class="btn btn-success">Check Answer</button>
+    <button data-id="${i}" id="btn-${i}" class="btn btn-success mb-2">Check Answer</button>
     <div id="alert-${i}" class="alert" role="alert">
         <h4 class="alert-heading">Well done!</h4>
         <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
@@ -71,7 +71,7 @@ console.log('clicked', answer_quiz1["2"]["answer"][0])
         <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
     </div>`;
     $('.option-list-' + i).after(solution_msg);
-    let options = document.getElementsByClassName('option-list-'+i);
+    let options = document.getElementsByClassName('option-'+i);
     for(let j=4;j>=1;j--){
       let arr = ['a', 'b', 'c', 'd'];
       let arr2 = ['A', 'B', 'C', 'D'];
@@ -81,7 +81,7 @@ console.log('clicked', answer_quiz1["2"]["answer"][0])
                             <label class="cbx" for="option-${i}${je}"><span>
                               <svg width="12px" height="10px" viewbox="0 0 12 10">
                                 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                              </svg></span><span id="span-${i}${je}" class="option"> int a = new int(3)</span>
+                              </svg></span><span id="span-${i}${je}" class="option"> ${options[j-1].innerText}</span>
                             </label>
                         </div>`;
 

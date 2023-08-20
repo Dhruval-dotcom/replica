@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
     <script src="sweetalert2/dist/sweetalert2.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="css/style-clock.css">
 </head>
 
 <body>
@@ -64,13 +64,16 @@
             </div>
         </div>
     </nav>
+    <center>
+        <span id="demo"></span>
+    </center>
 
     <ol class="question-group" style="--length: 5" role="list">
         <li class="question" style="--i: 1">
             <div class="badges badge-1">Question 1</div>
            <hr>
            <h6>How is an array initialized in C language?How is an array initialized in C language?How is an array initialized in C language?How is an array initialized in C language?How is an array initialized in C language?How is an array initialized in C language??</h6>
-           <div class="option-list-1">
+           <div class="option-list option-list-1">
                 <span class="option-1">int a = new int(3)</span>
                 <span class="option-1">int a[3] = {1,2,3}</span>
                 <span class="option-1">int a[3] = new int(3)</span>
@@ -82,7 +85,7 @@
             <div class="badges badge-2">Question 2</div>
            <hr>
            <h6>Which of the following is a linear data structure?</h6>
-           <div class="option-list-2">
+           <div class="option-list option-list-2">
                <span class="option-2">Array</span>
                <span class="option-2">AVL Trees</span>
                <span class="option-2">Binary Trees</span>
@@ -93,7 +96,7 @@
             <div class="badges badge-3">Question 3</div>
            <hr>
            <h6>How is the 2nd element in an array accessed based on pointer notation?</h6>
-           <div class="option-list-3">
+           <div class="option-list option-list-3">
                <span class="option-3">*a + 2</span>
                <span class="option-3">*(a + 2)</span>
                <span class="option-3">*(*a + 2)</span>
@@ -104,7 +107,7 @@
             <div class="badges badge-4">Question 4</div>
             <hr>
             <h6>Which of the following is not the type of queue?</h6>
-            <div class="option-list-4">
+            <div class="option-list option-list-4">
                 <span class="option-4">Pririty Queue</span>
                 <span class="option-4">Single Ended Queue</span>
                 <span class="option-4">Circular Queue</span>
@@ -115,7 +118,7 @@
             <div class="badges badge-5">Question 5</div>
             <hr>
             <h6>What is the disadvantage of array data structure?</h6>
-            <div class="option-list-5">
+            <div class="option-list option-list-5">
                 <span class="option-5">Amount of memory</span>
                 <span class="option-5">Elements of an array</span>
                 <span class="option-5">Elements are stored in contiguous memory block</span>
@@ -126,7 +129,7 @@
             <div class="badges badge-6">Question 6</div>
             <hr>
             <h6>From following which is not the operation of data structure?</h6>
-            <div class="option-list-6">
+            <div class="option-list option-list-6">
                 <span class="option-6">Operations that manipulate data in some way</span>
                 <span class="option-6">Operations that perform a computation</span>
                 <span class="option-6">Operations that check syntax errors</span>
@@ -137,41 +140,44 @@
             <div class="badges badge-7">Question 7</div>
             <hr>
             <h6>How are String represented in memory in C?</h6>
-            <div class="option-list-7">
+            <div class="option-list option-list-7">
                 <span class="option-7">int a = new int(3)</span>
                 <span class="option-7">int a = new int(3)</span>
                 <span class="option-7">int a = new int(3)</span>
                 <span class="option-7">int a = new int(3)</span>
             </div>
         </li>
-        <li class="question" style="--i: 8">
-            <h6>What is the output of the following code snippet?</h6>
-            <div class="alert alert-primary" role="alert">
-                <pre>
-                    void solve() {
-                        stack&lt;int&gt; s;
-                        s.push(1);
-                        s.push(2);
-                        s.push(3);
-                        for(int i = 1; i &lt;= 3; i++) {
-                            cout &lt;&lt; s.top() &lt;&lt; “ “;
-                            s.pop();
-                        }
-                     }
-                </pre>
-            </div>
-            <span>A </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-            <label for="vehicle1"> 3 2 1</label><br />
-            <span>B </span><input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-            <label for="vehicle2"> 1 2 3</label><br />
-            <span>C </span>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-            <label for="vehicle3"> 1</label><br />
-        </li>
+        
     </ol>
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-success mb-2 ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Submit Quiz
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Are you sure You want to submit the quiz?
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a id="btn-link" class="btn btn-success mb-2 ms-3">Submit Quiz</a>
+        </div>
+        </div>
+    </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/clock.js"></script>
 </body>
 
 </html>
+
